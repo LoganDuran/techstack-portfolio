@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="techstack">
+      <h2 class="chapter">MyTechStack</h2>
+      <div class="tab-wrapper">
+        <div id="b1" class="popup-tab" onclick="closeTab(this)">
+          <h2>HTML</h2>
+          <p>Details about HTML..</p>
+        </div>
+
+        <div id="b2" class="popup-tab" onclick="closeTab(this)">
+          <h2>CSS</h2>
+          <p>Details about CSS..</p>
+        </div>
+
+        <div id="b3" class="popup-tab" onclick="closeTab(this)">
+          <h2>SASS</h2>
+          <p>Details about SASS..</p>
+        </div>
+
+        <div class="tabs" onclick="openTab('b1')">
+          <iconify-icon icon="akar-icons:html-fill" width="75"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b2')">
+          <iconify-icon icon="akar-icons:css-fill" width="75"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b3')">
+          <iconify-icon icon="fa6-brands:sass" width="70"></iconify-icon>
+        </div>
+
+        <div id="b4" class="popup-tab" onclick="closeTab(this)">
+          <h2>PHP</h2>
+          <p>Details about PHP..</p>
+        </div>
+
+        <div id="b5" class="popup-tab" onclick="closeTab(this)">
+          <h2>WordPress</h2>
+          <p>Details about WordPress..</p>
+        </div>
+
+        <div id="b6" class="popup-tab" onclick="closeTab(this)">
+          <h2>MySQL</h2>
+          <p>Details about MySQL..</p>
+        </div>
+
+        <div class="tabs" onclick="openTab('b4')">
+          <iconify-icon icon="bxl:php" width="75"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b5')">
+          <iconify-icon icon="ic:outline-wordpress" width="75"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b6')">
+          <iconify-icon icon="simple-icons:mysql" width="75"></iconify-icon>
+        </div>
+
+        <div id="b7" class="popup-tab" onclick="closeTab(this)">
+          <h2>JavaScript</h2>
+          <p>Details about JavaScript..</p>
+        </div>
+
+        <div id="b8" class="popup-tab" onclick="closeTab(this)">
+          <h2>React</h2>
+          <p>Details about React..</p>
+        </div>
+
+        <div id="b9" class="popup-tab" onclick="closeTab(this)">
+          <h2>SEO</h2>
+          <p>Details about SEO..</p>
+        </div>
+
+        <div class="tabs" onclick="openTab('b7')">
+          <iconify-icon icon="fa6-brands:square-js" width="65"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b8')">
+          <iconify-icon icon="akar-icons:react-fill" width="65"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b9')">
+          <iconify-icon icon="tabler:seo" width="75"></iconify-icon>
+        </div>
+
+        <div id="b10" class="popup-tab" onclick="closeTab(this)">
+          <h2>Figma</h2>
+          <p>Details about Figma..</p>
+        </div>
+        <div id="b11" class="popup-tab" onclick="closeTab(this)">
+          <h2>Photoshop</h2>
+          <p>Details about Photoshop..</p>
+        </div>
+
+        <div id="b12" class="popup-tab" onclick="closeTab(this)">
+          <h2>TailwindCSS</h2>
+          <p>Details about TailwindCSS..</p>
+        </div>
+
+        <div class="tabs" onclick="openTab('b10')">
+          <iconify-icon
+            icon="solar:figma-bold-duotone"
+            width="75"
+          ></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b11')">
+          <iconify-icon icon="mage:photoshop" width="80"></iconify-icon>
+        </div>
+        <div class="tabs" onclick="openTab('b12')">
+          <iconify-icon
+            icon="flowbite:tailwind-solid"
+            width="75px"
+          ></iconify-icon>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
