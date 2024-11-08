@@ -91,53 +91,28 @@ strong {
 }
 /* --- End of Protfolio Styles --- */
 /* 
+/* 
+/* View Transition Animations */
 
-
-
-
-
-*/
-/* --- New Text Bubble Animation --- */
+@view-transition-group {
+  transition: all 0.3s ease;
+}
 
 .popup-tab {
+  @view-transition-name: "fade-in" , "fade-out";
   display: none;
   align-content: space-between;
   min-height: 150px;
   color: var(--light);
   padding: 20px;
 
-  gap: 10px;
   border: 2px solid var(--gray);
   border-radius: var(--radius);
   cursor: pointer;
-  animation: appear 0.5s;
 }
+
 .popup-tab[open] {
   display: grid;
-  /* opacity: 1; */
-  animation: vanish 0.5s;
-}
-
-@keyframes appear {
-  from {
-    display: none;
-    opacity: 0;
-  }
-  to {
-    display: grid;
-    opacity: 1;
-  }
-}
-
-@keyframes vanish {
-  from {
-    display: grid;
-    opacity: 1;
-  }
-  to {
-    display: none;
-    opacity: 0;
-  }
 }
 
 #b1,
