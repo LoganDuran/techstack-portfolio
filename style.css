@@ -90,9 +90,57 @@ strong {
   font-weight: 600;
 }
 /* --- End of Protfolio Styles --- */
-/* 
-/* 
-/* View Transition Animations */
+
+/* --- MyTechStack --- */
+
+.chapter {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+#techstack {
+  scroll-margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid var(--gray);
+}
+
+.tab-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 180px 180px 180px;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.tabs {
+  display: grid;
+  grid-template-rows: 150px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--gray);
+  border-radius: var(--radius);
+  transition: all 0.4s ease;
+}
+
+.tabs:hover {
+  background: var(--primary);
+  color: var(--light);
+  transition: 0.4s;
+}
+
+#techstack .textbubble ul li {
+  font-family: "Mona Sans", "Comfortaa";
+  line-height: 150%;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* --- MyTechStack View Transition Animations --- */
 
 @view-transition-group {
   transition: all 0.3s ease;
@@ -137,55 +185,6 @@ strong {
 #b11,
 #b12 {
   grid-area: 4 / 4 / 4 / 1;
-}
-
-/* --- MyTechStack --- */
-
-.chapter {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-
-#techstack {
-  scroll-margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  border-top: 2px solid var(--gray);
-}
-
-.tab-wrapper {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 180px 180px 180px;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-
-.tabs {
-  display: grid;
-  grid-template-rows: 150px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background: var(--gray);
-  border-radius: var(--radius);
-  transition: all 0.5s ease;
-}
-
-.tabs:hover {
-  background: var(--primary);
-  color: var(--light);
-  transition: 0.4s;
-}
-
-#techstack .textbubble ul li {
-  font-family: "Mona Sans", "Comfortaa";
-  line-height: 150%;
-  font-size: 0.9rem;
-  font-weight: 300;
 }
 
 /* --- End of MyTechStack --- */
